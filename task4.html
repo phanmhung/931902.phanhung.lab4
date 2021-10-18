@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Task 4</title>
+    <style media="screen">
+    html{
+      width: 100%;
+      overflow-x: hidden;
+    }
+      body{
+        margin:0;
+        background-color: #edeef0;
+        font-family: Geneva, Arial;
+      }
+      header{
+        background-color: #507299;
+      }
+      header > img{
+        padding-left: 13%;
+      }
+      main{
+        margin: 0 auto;
+        width: 65em;
+      }
+      .leftSidebar{
+        float: left;
+        list-style-type: none;
+        width:15%;
+        color: #507299;
+      }
+      ul > li{
+        margin-bottom: 15px;
+      }
+      li:hover{
+        background-color:#e1e5eb;
+      }
+      p::selection{
+        background-color: #d0d0d0;
+        color: green;
+      }
+      .rightSidebar{
+        float:right;
+        width:15%;
+      }
+      .context{
+        width:30em;
+        margin: 15px 21%;
+      }
+      .post > img{
+        max-width: 100%;
+        max-height: 100%;
+        border-bottom: 3px solid #d0d0d0;
+        margin: 0;
+        padding-bottom: 10px;
+      }
+      .post> p{
+        border-bottom: 3px solid #d0d0d0;
+        margin: 0;
+        padding-bottom: 10px;
+        text-align: justify;
+      }
+      .post > .Like{
+        padding-top: 5px;
+        color: #507299;
+      }
+      .post> .Comment{
+        padding-top: 5px;
+        float: right;
+        color: #507299;
+      }
+      .post > h4{
+        margin-bottom:10px;
+        padding: 10px 0;
+        border-bottom: 3px solid #d0d0d0;
+      }
+      .post{
+        box-sizing: content-box;
+        border: 2px solid #e1e5eb;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .rightBlock{
+        box-sizing: content-box;
+        border: 2px solid #e1e5eb;
+        background-color: white;
+        border-radius: 10px;
+        padding:5px;
+      }
+      .rightBlock > p{
+        background-color: #edeef0;
+      }
+      .rightBlock > h4{
+        padding-left: 10px;
+        padding-top: 10px;
+        margin: 0;
+      }
+      footer{
+        background-color: white;
+        color: #d0d0d0;
+        text-align: center;
+        padding: 5px;
+      }
+      @media screen and (max-width:1500px) {
+        .rightSidebar {
+	        display:none;
+        }
+      @media only screen and (max-width: 800px)
+      {
+        li{
+          display:inline;
+          margin-left: 5px;
+        }
+        li:nth-child(4){
+          margin-left: 15px;
+        }
+        .leftSidebar{
+          float: none;
+          margin-bottom: 50px;
+	        margin-left: 15px;
+          width:450px;
+          padding-top:0;
+        }
+        main{
+          width: 100%;
+        }
+        .context{
+          margin-left: 25px;
+          margin-bottom: 40px;
+        }
+        .rightSidebar{
+          display:none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="logo">
+    </header>
+    <main>
+      <ul class="leftSidebar">
+        <li>Main page</li>
+        <li>Secondary page</li>
+        <li>Some other page</li>
+        <li>More page to the god of pages</li>
+        <li>The last page</li>
+      </ul>
+      <div class="rightSidebar">
+        <div class="rightBlock">
+          <p>Very important information!</p>
+          <p>Many,many very usefull and important information!</p>
+        </div>
+        <div class="rightBlock">
+          <h4>Some new header!</h4>
+          <p>For example, some new and usefull fixed text. And mane another text and more text...
+          </p>
+        </div>
+      </div>
+      <div class="context">
+        <div class="post">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <div class="Comment">Comment</div>
+          <div class="Like">Like</div>
+        </div>
+        <div class="post">
+          <img src="cat.png" alt="cat">
+          <div class="Comment">Comment</div>
+          <div class="Like">Like</div>
+        </div>
+        <div class="post">
+          <h4>Some header</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <div class="Comment">Comment</div>
+          <div class="Like">Like</div></div>
+        <div class="post">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <div class="Comment">Comment</div>
+          <div class="Like">Like</div></div>
+        <div class="post">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <div class="Comment">Comment</div>
+          <div class="Like">Like</div></div>
+      </div>
+    </main>
+    <footer>Simple footer (text in the center).</footer>
+  </body>
+</html>
