@@ -15,9 +15,11 @@
       }
       header{
         background-color: #507299;
+        height:50px;
       }
       header > img{
-        padding-left: 13%;
+        padding-left: 15%;
+        margin-top:10px;
       }
       main{
         margin: 0 auto;
@@ -27,10 +29,13 @@
         float: left;
         list-style-type: none;
         width:15%;
+        padding: 0px 10px 0px 50px;
         color: #507299;
       }
-      ul > li{
-        margin-bottom: 15px;
+
+      li{
+        padding-bottom:20px;
+       	margin-left:-20px;
       }
       li:hover{
         background-color:#e1e5eb;
@@ -44,7 +49,7 @@
         width:15%;
       }
       .context{
-        width:30em;
+        width:29em;
         margin: 15px 21%;
       }
       .post > img{
@@ -76,6 +81,7 @@
       }
       .post{
         box-sizing: content-box;
+        line-height: 1.25em;	
         border: 2px solid #e1e5eb;
         background-color: white;
         border-radius: 10px;
@@ -88,6 +94,7 @@
         background-color: white;
         border-radius: 10px;
         padding:5px;
+        margin-bottom:20px;
       }
       .rightBlock > p{
         background-color: #edeef0;
@@ -107,21 +114,21 @@
         .rightSidebar {
 	        display:none;
         }
+      }
       @media only screen and (max-width: 800px)
       {
         li{
-          display:inline;
-          margin-left: 5px;
+          display:inline-block;
+          margin-left: 30px;
         }
         li:nth-child(4){
-          margin-left: 15px;
+          margin-left: 40px;
         }
         .leftSidebar{
           float: none;
-          margin-bottom: 50px;
-	        margin-left: 15px;
-          width:450px;
-          padding-top:0;
+          margin-bottom: 30px;
+	        margin-left: 10px;
+          width: 450px;
         }
         main{
           width: 100%;
@@ -189,6 +196,6 @@
           <div class="Like">Like</div></div>
       </div>
     </main>
-    <footer>Simple footer (text in the center).</footer>
+    <footer>Simple footer (text in the center)</footer>
   </body>
 </html>
